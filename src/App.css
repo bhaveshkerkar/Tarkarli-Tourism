@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  height: 70vh; /* takes most of the screen */
+  background-image: url("src/assets/images/tarkarli1.jpg"); /* image path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 64px;
+  letter-spacing: 6px;
+  color: white;
+}
+
+.subtitle {
+  color: #f1f1f1;
+  letter-spacing: 2px;
+}
+
+.navbar {
+  background: #023e8a;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  padding-bottom: 5px;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #ffd166;
+}
+
+.content {
+  padding: 20px;
+}
+
+.footer {
+  background: #eee;
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* HERO SECTION */
+.header {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* HERO NAVBAR (TOP RIGHT, TRANSPARENT) */
+.hero-navbar {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  display: flex;
+  gap: 25px;
+  z-index: 10;
+}
+
+.hero-navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.hero-navbar a:hover {
+  border-bottom: 2px solid #ffd166;
+}
+
+/* Active (when page is selected) */
+.hero-navbar a.active {
+  border-bottom: 2px solid #ffd166;
+  color: #ffd166;
+}
