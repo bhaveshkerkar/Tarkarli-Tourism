@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin, DollarSign } from "lucide-react";
+impot;
 
 function StayCard({ image, name, location, priceRange, type, index }) {
   const whatsappNumber = "919876543210";
