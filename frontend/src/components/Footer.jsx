@@ -72,7 +72,7 @@ export default function Footer() {
                 <MapPin size={18} /> Tarkarli, Sindhudurg, Maharashtra
               </p>
               <p className="flex items-center gap-3">
-                <Phone size={18} /> +91 98765 43210
+                <Phone size={18} /> +91 87670 32976
               </p>
               <p className="flex items-center gap-3">
                 <Mail size={18} /> info@exploretarkarli.com

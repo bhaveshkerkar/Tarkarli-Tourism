@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import heroVideo from "../assets/videos/HerohomeVideo.mp4";
 
 export default function Home() {
   return (
@@ -9,19 +10,18 @@ export default function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative h-screen w-full">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1637770577089-608e37d9502c?fm=jpg&q=80&w=1600)",
-          }}
+      <section className="relative h-screen w-full overflow-hidden">
+        {/* Background video */}
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src={heroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
         />
-
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40" />
-
         {/* Hero content */}
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
           <motion.h1
